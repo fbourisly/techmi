@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Cairo&family=Satisfy&display=swap" rel="stylesheet">
+    <title>Techmi</title>
+<style>
+    body{
+      background-color: rgb(32, 32, 32);
+    }
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 1700px;
+  border-radius: 50px;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+height: 60px;
+margin-left: 150px;
+}
+
+#myUL {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1900px;
+  list-style-type: none;
+  padding: 0;
+  /* margin: 0; */
+}
+
+#myUL li a {
+   
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  width: 280px;
+  height: 280px;
+  transition: 0.3s;
+  border-radius: 10px;
+  
+}
+
+
+
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+  transform: scale(1.12);
+}
+</style>
+</head>
+<body>
+
+    <nav>
+        <a style="text-decoration: none;  " href="./index.html">
+         <h3 style=" font-family: 'Satisfy', cursive; font-size: 40px; color: black; padding-left: 60px; color: rgb(56, 53, 224);" >Techmi</h3>
+        </a>
+        <hr style="margin-top: 15px; color: rgb(66, 66, 66);">
+        <ul style="list-style: none;">
+         
+          <!-- <li>
+          <img class="user-img" src="./images/user-icon.png" alt="" />
+        </li> -->
+        </ul>
+      </nav>
+
+<h1 style="font-family: 'Roboto', sans-serif; margin: 30px; color: #eee; text-align: center;">ckeck out the periodic table of elemets</h1>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="name the element..." title="name the element..."  >
+
+<ul id="myUL">
+
+    <div style="display: flex; justify-content: space-around; margin: 80px;">
+  <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./hydrogyn.png); background-repeat: no-repeat; background-size: cover;  font-weight: 700;">Hydrogen  </a></li>
+  <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./li.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">Lithium  </a></li>
+  <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./unknown.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">Beryllium  </a></li>
+  <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./bb.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">Boron  </a></li>
+  <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./c.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">Carbon  </a></li>
+</div>
+
+
+<div style="display: flex; justify-content: space-around; margin: 80px;">
+    <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./n.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">Nitrogen  </a></li>
+    <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./o.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">Oxygyn  </a></li>
+    <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./f.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">florine  </a></li>
+    <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./nn.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">Neon  </a></li>
+    <li><a href="#" style="padding-top: 230px; text-align: center; font-size: 30px; background-image: url(./s.png); background-repeat: no-repeat; background-size: cover;font-weight: 700;">Sodium  </a></li>
+</div>
+
+<!-- <div style="display: flex; justify-content: space-around; margin: 80px;">
+  <li><a href="#">Chlorine</a></li>
+  <li><a href="#">Aluminium</a></li>
+  <li><a href="#">Lead</a></li>
+  <li><a href="#">Argon</a></li>
+  <li><a href="#">Thulium</a></li>
+</div>
+
+
+<div style="display: flex; justify-content: space-around; margin: 80px;">
+  <li><a href="#">Europium</a></li>
+  <li><a href="#">Fermium</a></li>
+  <li><a href="#">Cobalt</a></li>
+  <li><a href="#">Nickel</a></li>
+  <li><a href="#">Iridium</a></li>
+</div> -->
+
+
+</ul>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>
